@@ -1,0 +1,51 @@
+/* TODO: temporary */
+body * {
+    border: 1px solid black;
+}
+img {
+    width: 200px;
+}
+/* end temporary */
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.header{
+    display: flex;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 25%;
+}
+
+.footer {
+    display: flex;
+}
