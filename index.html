@@ -9,55 +9,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <title>Launch Page</title>
+    <title>Landing Page</title>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Launch Page</h1>
-    </div>
 
-    <div class="main">
-        <div class="hero">
-            <h2>Hero Section</h2>
-            <img src="" alt="hero">
+    <!-- spec said 4 sections and a footer; i disagree.
+    i don't think header should be part of hero
+    header is the mirror of footer, both are distinct components
+    -->
+    <section class="header bg-hero">
+        <p class="tx-main f24">Header Logo</p>
+        <ul class="links">
+            <li><a class="tx-second" href="#">header link one</a></li>
+            <li><a class="tx-second" href="#">header link two</a></li>
+            <li><a class="tx-second" href="#">header link three</a></li>
+        </ul>
+    </section>
+
+    <section class="hero bg-hero">
+        <div class="item">
+            <p class="tx-second f48 fw-b">This website is awesome</p>
+            <p class="tx-second f18">This website has some subtext that goes here under the main title. It's a smaller
+                font and the color is lower contrast</p>
+            <input class="button bg-blue tx-second f18" type="button" value="Sign up">
         </div>
+        <div class="item">
+            <img class="hero-img" src="./img/cat.jpg" alt="hero">
+        </div>
+    </section>
 
-        <div class="info">
-            <h2>Info Section</h2>
-            <h4>plan to try using figure tag for stuff in this part, example from MDN </h4>
-            <div class="cards">
-                <figure>
-                    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
-                        alt="Elephant at sunset">
-                    <figcaption>An elephant at sunset</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
-                        alt="Elephant at sunset">
-                    <figcaption>An elephant at sunset</figcaption>
-                </figure>
-                <figure>
-                    <img src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/elephant-660-480.jpg"
-                        alt="Elephant at sunset">
-                    <figcaption>An elephant at sunset</figcaption>
-                </figure>
+    <section class="info bg-second">
+        <p class="tx-dark f36 fw-b">Some random information.</p>
+        <div class="cards">
+            <figure>
+                <img src="./img/cat.jpg" alt="Sleepy Mickey">
+                <figcaption>Sleepy Mickey</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/cat.jpg" alt="Sleepy Mickey">
+                <figcaption>Sleepy Mickey</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/cat.jpg" alt="Sleepy Mickey">
+                <figcaption>Sleepy Mickey</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/cat.jpg" alt="Sleepy Mickey">
+                <figcaption>Sleepy Mickey</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="quote">
+        <figure>
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p class="tx-dark f36 fw-li">Words can be like X-rays, if you use them properly—they’ll go through
+                    anything. You read and you’re
+                    pierced.</p>
+            </blockquote>
+            <figcaption class="tx-dark fw-b">—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+        </figure>
+    </section>
+
+    <section class="sign-up">
+        <div class="bubble bg-blue">
+            <div>
+                <p class="tx-second fw-b">Call to action! It's time</p>
+                <p class="tx-second">Sign up for our product by clicking that button right over there</p>
             </div>
+            <input class="button border bg-blue tx-second f18" type="button" value="Sign up">
         </div>
+    </section>
 
-        <div class="quote">
-            some quote
-        </div>
-
-        <div class="submit">
-
-        </div>
-    </div>
-
-    <div class="footer">
-        footer stuff
-    </div>
+    <section class="footer bg-hero tx-second">
+        <p>footer stuff</p>
+    </section>
 
 </body>
 
