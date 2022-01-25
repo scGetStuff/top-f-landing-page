@@ -1,7 +1,6 @@
 /* i hate color numbers all over the place
 don't know if this is a good approach 
-TODO: should look into what bootstrap does with primary, alert ...
-*/
+TODO: should look into what bootstrap does with primary, alert ... */
 :root {
   --clr-1: #1F2937;
   --clr-2: #F9FAF8;
@@ -9,15 +8,15 @@ TODO: should look into what bootstrap does with primary, alert ...
   --clr-4: #3882F6;
 }
 
-/*
-starting to build my personal boiler plate, trying to establish some standard stuff
+
+/* starting to build my personal boiler plate, trying to establish some standard stuff
 force consistant behavior, there are a few issues i know of so far
 top margin behavior between flex and box
 padding causing other elements to shift
 
 TODO: one thing about this that i hate is that i'm using px all over for padding
-more util classes would be cleaner, need to stop and go learn more stuff
-*/
+more util classes would be cleaner, need to stop and go learn more stuff */
+
 /* ************************************************************************** */
 html {
   box-sizing: border-box;
@@ -30,11 +29,10 @@ html {
 }
 
 /* for visualizing layout */
-/*
-  body * {
-	  border: 1px solid red;
-	}
-*/
+/* body * {
+  border: 1px solid red;
+} */
+
 /* ************************************************************************** */
 
 body {
@@ -86,14 +84,12 @@ figure {
 }
 
 .item {
-  /*
-    Did this to make each item the same width, the pic was moved too far right.
+    /* Did this to make each item the same width, the pic was moved too far right.
     Got it from a search, i think i understand now.
     Each item tells the container it needs full width, then the container scales them down evenly.
     Only works because wrap is turned off and shrink and grow are the same.
     TODO: this seems like a shit solution, too fragile, find a better way.
-    Basicaly i want text wraping, set a max width on p elements
-    */
+    Basicaly i want text wraping, set a max width on p elements */
   flex-basis: 100%;
 }
 
